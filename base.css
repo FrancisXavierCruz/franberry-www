@@ -1,0 +1,26 @@
+/*
+Original code:
+https://github.com/fireship-io/224-animated-css-grid/blob/master/public/base.css
+*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background: #353535;*/
+    font-size: 3rem;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    /*transition: all 500ms;*/
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.card:hover {
+    cursor: pointer;
+}
