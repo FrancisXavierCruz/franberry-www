@@ -1,4 +1,4 @@
-/* 
+/*
 Original code:
 https://github.com/fireship-io/222-responsive-icon-nav-css/blob/master/public/style.css
 */
@@ -17,7 +17,7 @@ https://github.com/fireship-io/222-responsive-icon-nav-css/blob/master/public/st
 body {
   margin: 0;
   padding: 0;
-  background: #000;
+  /*background: #000;*/
   color: var(--text-primary);
 }
 
@@ -57,30 +57,20 @@ main {
   width: 100%;
 }
 
-.nav-link {
+.nav-link, .social-link {
   display: flex;
   align-items: center;
   height: 3rem;
   color: var(--text-primary);
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
+  filter: grayscale(100%);
   transition: var(--transition-speed-nav-link);
 }
 
-.nav-link:hover {
-  filter: grayscale(0%) opacity(1);
+.nav-link:hover, .social-link:hover {
+  filter: grayscale(0%);
   /*background: var(--bg-secondary);*/
   color: var(--text-secondary);
-}
-
-.nav-link img {
-  margin-top: 5rem;
-}
-
-.nav-link i {
-  width: 2rem;
-  min-width: 2rem;
-  margin: 0 1.5rem;
 }
 
 .link-text {
@@ -89,7 +79,6 @@ main {
 
 #logo, #logo-m {
   /*margin-bottom: 1rem;*/
-  background-image: url("https://lh3.googleusercontent.com/pw/ACtC-3elbPU07A4bLmivbHHEoscMJiKF4nD4_rZJ-kEcCA0KVV2hmMayqSMCc5L5MPvx-5MaTsAy4qghLinviT371nLnXj241DG-HYWHhNpxoiyrDYyQQN9wMQCZPjLKRhRWwKejd1bs09c4rC-i2Bqq2A2Z=s504-no?authuser=0");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -111,10 +100,6 @@ main {
   /*transition: var(--transition-speed);*/
 }
 
-#contact {
-  margin-top: 8rem;
-}
-
 footer {
   text-align: center;
   font-size: 0.8rem;
@@ -134,29 +119,55 @@ footer {
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-  #navbar {
-    bottom: 0;
-    width: 100vw;
-    height: 5rem;
+  #logo-m {
+    background-image: url("https://lh3.googleusercontent.com/pw/ACtC-3eeo2Zan86laOEaGkHxAXj9qDRpxWDvHc-UBGZXMAB6yNvNvEUs3_ks8ceunGXJXLLKnG9TL0lqpyK4WLTcdPmUvqMSi80lBzXeDcn0FnGHGjJJsHvRMBdqmm60SLh1BuepdfIIHVr9_o-BNLqIGsRU=s504-no?authuser=0");
   }
 
   #logo, .link-text, #support-list, .placeholder {
     display: none;
   }
 
+  #navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
   #nav-list {
-    flex-direction: row;
     height: 100%;
-    align-items: center;
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+  }
+
+  .nav-link {
+    justify-content: center;
+    /*flex-direction: row;*/
+  }
+
+  .nav-link i {
+    /*width: 2rem;*/
+    /*min-width: 2rem;*/
+    /*margin: 0 1.5rem;*/
     justify-content: space-between;
   }
 
-  /*.nav-link {
-    justify-content: center;
-  }*/
+  .social-link i {
+    /*width: 2rem;*/
+    /*min-width: 2rem;*/
+    margin: 0 1rem 0 0;
+  }
+
+  #shop-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #social-list {
+    flex-direction: column;
+  }
 
   #social-list, #shop-list {
-    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -165,21 +176,36 @@ footer {
     margin-top: 3rem;
   }
 
+  #shop-list img {
+    height: 3rem;
+    width: 3rem;
+  }
+
   main {
     margin: 0 0 5rem 0;
   }
 }
 
 /* Large screens */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
   #logo-m, #support-list-m {
     display: none;
+  }
+
+  #logo {
+    background-image: url("https://lh3.googleusercontent.com/pw/ACtC-3elbPU07A4bLmivbHHEoscMJiKF4nD4_rZJ-kEcCA0KVV2hmMayqSMCc5L5MPvx-5MaTsAy4qghLinviT371nLnXj241DG-HYWHhNpxoiyrDYyQQN9wMQCZPjLKRhRWwKejd1bs09c4rC-i2Bqq2A2Z=s504-no?authuser=0");
   }
 
   #navbar {
     top: 0;
     width: 13rem;
     height: 100vh;
+  }
+
+  .nav-link i, .social-link i {
+    /*width: 2rem;*/
+    /*min-width: 2rem;*/
+    margin: 0 1.5rem;
   }
 
   #nav-list, #support-list {
@@ -193,5 +219,10 @@ footer {
   #social-list, #shop-list {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  #shop-list img {
+    height: 5rem;
+    width: 5rem;
   }
 }
