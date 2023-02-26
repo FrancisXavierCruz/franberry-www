@@ -1,0 +1,172 @@
+@import "./mixins";
+
+$xs : "screen and (max-width: 599px)";
+$sm : "screen and (min-width: 600px) and (max-width: 959px)";
+$md : "screen and (min-width: 960px) and (max-width: 1279px)";
+$lg : "screen and (min-width: 1280px) and (max-width: 1919px)";
+$xl : "screen and (min-width: 1920px) and (max-width: 5000px)";
+$lt-sm : "screen and (max-width: 599px)";
+$lt-md : "screen and (max-width: 959px)";
+$lt-lg : "screen and (max-width: 1279px)";
+$lt-xl : "screen and (max-width: 1919px)";
+$gt-xs : "screen and (min-width: 600px)";
+$gt-sm : "screen and (min-width: 960px)";
+$gt-md : "screen and (min-width: 1280px)";
+$gt-lg : "screen and (min-width: 1920px)";
+
+$sizes: (
+	xs: $xs,
+	sm: $sm,
+	md: $md,
+	lg: $lg,
+	xl: $xl,
+);
+
+$position: (
+	t: top,
+	r: right,
+	b: bottom,
+	l: left,
+);
+/* 
+@include styleGenerator(500,"margin","mg"); //range,property,name,position,size
+@each $suffix, $prop in $position {
+	@include styleGenerator(500,"margin","mg"+$suffix,$prop);
+}
+
+@include styleGenerator(500,"padding","pd"); //range,property,name,position,size
+@each $suffix, $prop in $position {
+	@include styleGenerator(500,"padding","pd"+$suffix,$prop);
+}
+
+@each $size, $screen in $sizes{
+    @media #{ $screen }{
+		@include styleGenerator(500,"margin","mg",null,$size);
+		@each $suffix, $prop in $position {
+			@include styleGenerator(500,"margin","mg"+$suffix,$prop,$size);
+		}
+        @include styleGenerator(500,"padding","pd",null,$size);
+		@each $suffix, $prop in $position {
+			@include styleGenerator(500,"padding","pd"+$suffix,$prop,$size);
+		}
+    }
+}
+
+@include percentGenerator("wdflex","width"); //property,name,unit
+@include percentGenerator("htflex","height"); //property,name,unit
+@include pxGenerator("wd-","width",500); //property,name,unit
+@include pxGenerator("ht-","height",500); //property,name,unit
+
+
+@each $size, $screen in $sizes {
+    @media #{ $screen }{
+        @include percentGenerator("wdflex-"+$size+"-","width"); //property,name,unit
+        @include percentGenerator("htflex-"+$size+"-","height"); //property,name,unit
+        @include pxGenerator("wd-"+$size+"-","width",500); //property,name,unit
+        @include pxGenerator("ht-"+$size+"-","height",500); //property,name,unit
+    }
+}
+
+.keep-square {
+    @include keep-square;
+}
+
+.keep-two-one {
+    @include keep-two-one;
+}
+.mg0-auto {
+    margin: 0 auto !important;
+}
+
+.d-flex{
+    display: flex !important;
+    &.flex-direction-column { flex-direction: column; }
+    &.justify-content-start {
+        -webkit-box-pack: start!important;
+        -ms-flex-pack: start!important;
+        justify-content: flex-start!important;
+    }
+    &.justify-content-end {
+        -webkit-box-pack: end!important;
+        -ms-flex-pack: end!important;
+        justify-content: flex-end!important;
+    }
+    &.justify-content-between {
+        -webkit-box-pack: justify!important;
+        -ms-flex-pack: justify!important;
+        justify-content: space-between!important;
+    }
+    &.justify-content-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    &.justify-content-around {
+        -ms-flex-pack: distribute!important;
+        justify-content: space-around!important;
+    }
+    &.justify-content-evenly {
+        -ms-flex-pack: distribute!important;
+        justify-content: space-evenly!important;
+    }
+
+    &.place-content-center-center {
+        place-content: center center;
+    }
+
+    &.place-content-center-between {
+        place-content: center space-between;
+    }
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+.align-items-end {
+    align-items: end;
+}
+
+@each $size, $screen in $sizes {
+    @media #{ $screen }{
+        .flex-#{$size}-col {
+            flex-direction: column;
+        }
+        .flex-#{$size}-row {
+            flex-direction: row;
+        }
+        .flex-wrap-#{$size} {
+            flex-wrap: wrap;
+        }
+        .flex-nowrap-#{$size} {
+            flex-wrap: nowrap;
+        }
+
+        .justify-content-evenly-#{$size} {
+            -ms-flex-pack: distribute !important;
+            justify-content: space-evenly !important;
+        }
+        .justify-content-end-#{$size} {
+            -webkit-box-pack: end !important;
+            -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+        }
+    }
+}
+
+img.contain { object-fit: contain !important; }
+img.cover { object-fit: cover !important; }
+ */
+.show-on-pc {
+    @media #{ $xs }{
+        display: none;
+    }
+}
+.hide-on-pc {
+    display: none;
+    @media #{ $xs }{
+        display: block;
+    }
+}

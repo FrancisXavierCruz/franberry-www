@@ -1,0 +1,136 @@
+/************************************
+*    0.0 Table of Contents
+*************************************
+    1.0 - Functions
+        1.1 - str-replace
+    2.0 - SCSS Mixins
+*************************************/
+
+/*-------------------------------------------*\
+    1.0 - Functions
+\*-------------------------------------------*/
+
+/* 1.1 - str-replace */
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    @return $string;
+}
+
+/*-------------------------------------------*\
+    2.0 - SCSS Mixins
+\*-------------------------------------------*/
+
+@mixin keep-square {
+    overflow: hidden;
+	position: relative;
+	.img-holder{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit:cover;
+		}
+	}
+	&:before{
+		display: block;
+		content: "";
+		padding-top: 100%;
+        width: 100%;
+	}
+}
+@mixin keep-two-one {
+    overflow: hidden;
+	position: relative;
+	.img-holder{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit:cover;
+		}
+	}
+	&:before{
+		display: block;
+		content: "";
+		padding-top: 50%;
+        width: 100%;
+	}
+}
+
+@mixin printStyle($name,$property,$value,$unit:"px") {
+    #{ $name } {
+        #{$property} : #{$value}#{$unit} !important;
+    }
+}
+
+@mixin styleGenerator($range,$property,$name,$position:null,$size:null){
+    //range,property,name,position,size
+    $name: "."+$name;
+    @if $position {
+        $property: $property+"-"+$position;
+    }
+
+    @if $size {
+        @for $value from 0 through $range {
+            @if $value <= 20 {
+                @include printStyle($name+$value+"-"+$size,$property,$value);
+            } @else if $value > 20 and $value <= 100 {
+                @if $value % 5 == 0 {
+                    @include printStyle($name+$value+"-"+$size,$property,$value);
+                }
+            } @else if $value > 100 and $value <= 500 {
+                @if $value % 10 == 0 {
+                    @include printStyle($name+$value+"-"+$size,$property,$value);
+                }
+            } @else if $value > 500 {
+                @if $value % 100 == 0 {
+                    @include printStyle($name+$value+"-"+$size,$property,$value);
+                }
+            }
+        }
+    }@else{
+        @for $value from 0 through $range {
+            @if $value <= 20 {
+                @include printStyle($name+$value,$property,$value);
+            } @else if $value > 20 and $value <= 100 {
+                @if $value % 5 == 0 {
+                    @include printStyle($name+$value,$property,$value);
+                }
+            } @else if $value > 100 and $value <= 200 {
+                @if $value % 10 == 0 {
+                    @include printStyle($name+$value,$property,$value);
+                }
+            } @else if $value > 200 {
+                @if $value % 100 == 0 {
+                    @include printStyle($name+$value,$property,$value);
+                }
+            }
+        }
+    }
+}
+
+@mixin percentGenerator($name,$property,$range:100){
+    $name: "."+$name;
+    @for $value from 1 through $range {
+        // @if $value % 5 == 0 {
+            @include printStyle($name+$value,$property,$value,"%");
+        // }
+    }
+}
+@mixin pxGenerator($name,$property,$range:100){
+    $name: "."+$name;
+    @for $value from 1 through $range {
+        @include printStyle($name+$value,$property,$value,"px");
+    }
+}

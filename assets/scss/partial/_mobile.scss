@@ -1,0 +1,66 @@
+@media screen and (orientation: portrait) {
+    h1.sp-center {
+        text-align: center;
+    }
+
+    .container {
+        height: clamp(100px, 80%, 100%);
+    }
+
+    #body-carousel{
+        #updates-1 {
+            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8AEJ38wRKs8KvoT6lr9HKj_Xdlxdwfk8NJkT5GDNtkCPIAvUyAST42KgFlVa93oxRxU2mzQQDFRWx7yv9dMTei5JKeVWKshb9UkaXQSKYez4znggMMOwRkhZ0Z0MBt9Aov_qSMOwDY28WiVPdqjqaPj=s604-no?authuser=0");
+        }
+
+        #updates-2 {
+            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8CcTqcQdk-xKkaByd2_8cuFBwFCicfpCp_aCOSVAHKKstcHIINi-Rl1H_3FT75UrjWCr_oH-HpV5Lr9qWYpTfmNCaW42uuvq244-OJORgfsB1huY_rSlzFSwEgyhJGNKSrpy0WaoQ46yq6ikmYduZ22=s604-no?authuser=0");
+        }
+
+        #updates-3 {
+            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8DoulufCT-1hRwF1re6pcijYiSy6vaBk-mmvhNnJ7pZ5akN2EdRtItUk3HYImJiSFkdV2HM5m4oAGtfcG42F1bEh_rBCtHhAU9kYbnQ7hlpifd5BVROYOw4SNnqxxN1lXl2_C6AlzmQWh3bEQ5KDyzI=s604-no?authuser=0");
+        }
+
+        #updates-4 {
+            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8DdfPZ-FeUZ-lIFsaeFqiYyS-ZXN8Bs8DerUb8BRmaXIZGGEDCHV6YU6EWsyGZhNq3uYhwtnCMmJHOyXjSAqqWUoYTg32KQOiUANtRzM6wODdw9SAj3PUtJhBwZja-PqgPXUn72KxuQGd3nxYQec2Lt=s604-no?authuser=0");
+        }
+
+        #updates-5 {
+            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8CTwhzYA-Hdq9VPwQv2SWImRJ90i6g5LotOtbSsnPf_KU5czQ-Ur6zdsbpVe02nYrBajRx272U5znDgmOLoiI1QEY4L3SXowXXhaPIa2x6GlrfhrafqocEz4ZSsN4zJer6gbFK3GjLS8YDrm_-n1ppJ=s604-no?authuser=0");
+        }
+    }
+
+    #navbar {
+        z-index: 2;
+        ul#nav-list{
+            position: relative;
+            li.nav-item {
+                a.nav-link {
+                    .fa-caret-down {
+                        padding-left: 5px;
+                    }
+                }
+                .dropdown-container {
+                    position: absolute;
+                    top: -48px;
+                    left: 0;
+                    display: none;
+                    width: 100%;
+                    padding: 0;
+                    li {
+                        list-style: none;
+                        &.nav-item {
+                            background: rgba(darken(#ffc0cb,5%),0.6);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .photo-grid {
+        div.card.sp-top {
+            background-position: top;
+
+        }
+    }
+}
