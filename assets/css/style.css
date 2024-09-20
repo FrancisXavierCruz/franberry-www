@@ -44,6 +44,7 @@ main {
 }
 
 #nav-list,
+#intro,
 #social-list,
 #support-list,
 #support-list-m,
@@ -162,6 +163,7 @@ footer {
     /*margin: 0 1.5rem;*/
     justify-content: space-between;
   }
+
   .social-link i {
     /*width: 2rem;*/
     /*min-width: 2rem;*/
@@ -175,10 +177,33 @@ footer {
     height: 3rem;
     width: 3rem;
   }
+
+  #intro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #intro {
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    display: flex;
+  } 
+
   #social-list {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
   }
-  #social-list,
+
+  #social-list div {
+    width: 33.33%;
+    text-align: center;
+
+  }
+
   #shop-list {
     align-items: flex-start;
   }
@@ -189,6 +214,24 @@ footer {
   main {
     margin: 0 0 5rem 0;
   }
+
+  .button {
+    background-color: #f7a6e0;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .button:hover {
+    background-color: #d380b2;
+  }
+
 }
 /* Large screens */
 @media only screen and (orientation: landscape) {
@@ -214,6 +257,7 @@ footer {
   #nav-list,
   #support-list {
     flex-direction: column;
+
   }
   .dropdown-container {
     display: none;
@@ -224,7 +268,33 @@ footer {
   #support-list {
     margin-top: 2rem;
   }
-  #social-list,
+  
+  #intro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #intro {
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    display: flex;
+  } 
+
+  #social-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #social-list div {
+    width: 33.33%;
+    text-align: center;
+
+  }
+
   #shop-list {
     flex-direction: row;
     justify-content: space-around;
@@ -232,6 +302,23 @@ footer {
   #shop-list img {
     height: 5rem;
     width: 5rem;
+  }
+
+  .button {
+    background-color: #f7a6e0;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .button:hover {
+    background-color: #d380b2;
   }
 }
 /*
@@ -284,7 +371,24 @@ https://github.com/fireship-io/224-animated-css-grid/blob/master/public/photo-gr
   box-sizing: border-box;
 }
 
-#body-carousel {
+#intro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#intro div {
+  width: 66.66%;
+}
+
+#intro {
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  display: flex;
+} 
+
+* #body-carousel {
   height: 50vh;
   align-items: center;
   justify-content: center;
@@ -334,23 +438,24 @@ input[type=radio] {
 }
 
 #updates-1 {
-  background-image: url("https://lh3.googleusercontent.com/pw/AMWts8A3ozIZqaNQU8AOvmtj9XQSqPxfuXq4a9K75cZy-rKZrnQN-7O0tX9w0DksIRfsgPiLGR1wJXAcN580fg7Ng8wR4FExKXQpxGJdYybRBOzib7VE-nDap_aRgx9RIf7K5BvBnDcJlYA0Wr662q0oCTfR=w1024-h600-no?authuser=0");
+  background-image: url("https://lh3.googleusercontent.com/pw/AP1GczORX10r9AvNIVKQ5Z5I3NMvOuLMw2p_CfRbLfk8DWY-d1prBtgAYtP3txoC-TDSoQbTJc0Bl2IMa7XicxQs013qdVE19P4YtaTzn8VnuytlU1Mg7AOe1BG8JGM3OWCGb4VkZamgGhAC6r1qAjQ7oBew=w1024-h600-s-no-gm?authuser=0");
 }
 
 #updates-2 {
-  background-image: url("https://lh3.googleusercontent.com/pw/AMWts8AfA8D3sC4dix4SChZ1a7fgYDN14XwYTJVRhIkGstvjVoQf5Uo9tiJKdzQVmfQ0GLTfPKswXIKIlfa3_Z3py0tRe2SK-qUK7e1Ob9t1EeomV3yOXuVQc2k_xEbps1QCis9oKQN1axUSa28yUzvVkgth=w1024-h600-no?authuser=0");
+  background-image: url("https://lh3.googleusercontent.com/pw/AP1GczNgaw8bRDGjv-0gR_ZdFnbQP5bKVcwapbKZ8qIfhj_UHE79yXIYiAtcRbMr84fECXLd2ra5C2SLxtsV1kSuNDA-InCK58V4SnKW5Dkb9WC4b5q9C6Pz8e0H60Rk9PO8r0NB049XiO1ILSIz2_MtkbEYBw=w1024-h600-s-no-gm?authuser=0");
 }
 
 #updates-3 {
-  background-image: url("https://lh3.googleusercontent.com/pw/AMWts8A0TpcUPYwFRdqQPcckGZTYvZVSxm0gYBjXeAJZfg6PIaZDYcCo8Fx0dGmRJ0AQ0yLZaDrFs4xB7YknApZiwsJDvJ8oNuNQz5VK8qLd6Bqf5pxIesFDnxU_xTRd5Gz2ErLwbGBTZ7DdD3P55DGQ5rG0=w1024-h600-no?authuser=0");
+  background-image: url("https://lh3.googleusercontent.com/pw/AP1GczNhd5Ag7LIvcHLiv_T7CD2bY2xPGE56Ew4UBDYsy3kiL_JZvyNLzvQjIC00CCYMgpWGWFPeq9goNi-N-y5Y_O3KiA3oQaIIxNzkVw2kV4Ec-QjbOpduqbqGrlRCzkhjj6-q9ecCjfCD6GvpmFhi6MaKPQ=w1024-h600-s-no-gm?authuser=0");
+  
 }
 
 #updates-4 {
-  background-image: url("https://lh3.googleusercontent.com/pw/AMWts8DOt1gPsOSQeLymNG4pkehGoz9e2qm6IjxLJflzQe0AqZd6hq1wvv3Yuk18slFUPABQ6FGUblZMvTbm5gb-e9OiFNKrrbC-0VirayCWdvsHU-sdsUKQ7uMJmPfZM_mHZs8hKe9yzZ2QAk5NvufAg4vr=w1200-h456-no?authuser=0");
+  background-image: url("https://lh3.googleusercontent.com/pw/AP1GczN8VSMuXgzy4esI6ywnmKrWmr9Ky9MVa3_eydxddgufWYI3TFNOz3Tpr4PNBVPYe48kvLWuzp_-g1sD2VjNGTJR-l8yqvisN74Cfj4VzHgR5fLXS375nzn4zg9O0er6J9eiSEmIKDwX78FmuJQhYLIsPQ=w1024-h600-s-no-gm?authuser=0");
 }
 
 #updates-5 {
-  background-image: url("https://lh3.googleusercontent.com/pw/AMWts8C5CEsy0mc915E8uutKD9qDWsRTfeXFVbL5F2COX7PulIF8tG3UX6Rr54IIFmiETDbj14UT1nM5rjgYG_QLwSDjD6WH4B0Bx7Oy6utLb88uB7OvH25YRzagAiCMb8Q-kS1fq7dXiz01Rs-I59sP6WgB=w1350-h593-no?authuser=0");
+  background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOi5GbabpvOKkGkZLFAwCG7ZlVsfQ7LlLm3Z4kFIxylIvZNTbP3zpfgAb9_uJXuhevnDdR6YdpgNwrAPrsWr9xRn1a6_PqbLEN8ZmD89pORjQd6q7OhFO2ZQC292-vTXvl-nvREyoAIti8ZYX0PC_8fbQ=w1024-h600-s-no-gm?authuser=0");
 }
 
 #updates-1,
@@ -463,19 +568,19 @@ input[type=radio] {
     height: clamp(100px, 80%, 100%);
   }
   #body-carousel #updates-1 {
-    background-image: url("https://lh3.googleusercontent.com/pw/AMWts8AEJ38wRKs8KvoT6lr9HKj_Xdlxdwfk8NJkT5GDNtkCPIAvUyAST42KgFlVa93oxRxU2mzQQDFRWx7yv9dMTei5JKeVWKshb9UkaXQSKYez4znggMMOwRkhZ0Z0MBt9Aov_qSMOwDY28WiVPdqjqaPj=s604-no?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczORX10r9AvNIVKQ5Z5I3NMvOuLMw2p_CfRbLfk8DWY-d1prBtgAYtP3txoC-TDSoQbTJc0Bl2IMa7XicxQs013qdVE19P4YtaTzn8VnuytlU1Mg7AOe1BG8JGM3OWCGb4VkZamgGhAC6r1qAjQ7oBew=w1024-h600-s-no-gm?authuser=0");
   }
   #body-carousel #updates-2 {
-    background-image: url("https://lh3.googleusercontent.com/pw/AMWts8CcTqcQdk-xKkaByd2_8cuFBwFCicfpCp_aCOSVAHKKstcHIINi-Rl1H_3FT75UrjWCr_oH-HpV5Lr9qWYpTfmNCaW42uuvq244-OJORgfsB1huY_rSlzFSwEgyhJGNKSrpy0WaoQ46yq6ikmYduZ22=s604-no?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczNgaw8bRDGjv-0gR_ZdFnbQP5bKVcwapbKZ8qIfhj_UHE79yXIYiAtcRbMr84fECXLd2ra5C2SLxtsV1kSuNDA-InCK58V4SnKW5Dkb9WC4b5q9C6Pz8e0H60Rk9PO8r0NB049XiO1ILSIz2_MtkbEYBw=w1024-h600-s-no-gm?authuser=0");
   }
   #body-carousel #updates-3 {
-    background-image: url("https://lh3.googleusercontent.com/pw/AMWts8DoulufCT-1hRwF1re6pcijYiSy6vaBk-mmvhNnJ7pZ5akN2EdRtItUk3HYImJiSFkdV2HM5m4oAGtfcG42F1bEh_rBCtHhAU9kYbnQ7hlpifd5BVROYOw4SNnqxxN1lXl2_C6AlzmQWh3bEQ5KDyzI=s604-no?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczNhd5Ag7LIvcHLiv_T7CD2bY2xPGE56Ew4UBDYsy3kiL_JZvyNLzvQjIC00CCYMgpWGWFPeq9goNi-N-y5Y_O3KiA3oQaIIxNzkVw2kV4Ec-QjbOpduqbqGrlRCzkhjj6-q9ecCjfCD6GvpmFhi6MaKPQ=w1024-h600-s-no-gm?authuser=0");
   }
   #body-carousel #updates-4 {
-    background-image: url("https://lh3.googleusercontent.com/pw/AMWts8DdfPZ-FeUZ-lIFsaeFqiYyS-ZXN8Bs8DerUb8BRmaXIZGGEDCHV6YU6EWsyGZhNq3uYhwtnCMmJHOyXjSAqqWUoYTg32KQOiUANtRzM6wODdw9SAj3PUtJhBwZja-PqgPXUn72KxuQGd3nxYQec2Lt=s604-no?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczN8VSMuXgzy4esI6ywnmKrWmr9Ky9MVa3_eydxddgufWYI3TFNOz3Tpr4PNBVPYe48kvLWuzp_-g1sD2VjNGTJR-l8yqvisN74Cfj4VzHgR5fLXS375nzn4zg9O0er6J9eiSEmIKDwX78FmuJQhYLIsPQ=w1024-h600-s-no-gm?authuser=0");
   }
   #body-carousel #updates-5 {
-    background-image: url("https://lh3.googleusercontent.com/pw/AMWts8CTwhzYA-Hdq9VPwQv2SWImRJ90i6g5LotOtbSsnPf_KU5czQ-Ur6zdsbpVe02nYrBajRx272U5znDgmOLoiI1QEY4L3SXowXXhaPIa2x6GlrfhrafqocEz4ZSsN4zJer6gbFK3GjLS8YDrm_-n1ppJ=s604-no?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOi5GbabpvOKkGkZLFAwCG7ZlVsfQ7LlLm3Z4kFIxylIvZNTbP3zpfgAb9_uJXuhevnDdR6YdpgNwrAPrsWr9xRn1a6_PqbLEN8ZmD89pORjQd6q7OhFO2ZQC292-vTXvl-nvREyoAIti8ZYX0PC_8fbQ=w1024-h600-s-no-gm?authuser=0");
   }
   #navbar {
     z-index: 2;
@@ -503,4 +608,127 @@ input[type=radio] {
   .photo-grid div.card.sp-top {
     background-position: top;
   }
+
+  .button {
+    background-color: #f7a6e0;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .button:hover {
+    background-color: #d380b2;
+  }
+
+  #social-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #social-list div {
+    width: 33.33%;
+    text-align: center;
+
+  }
+
+  #support-new {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  #support-new div {
+    text-align: center;
+  }
+}
+
+hr.solid {
+  border-top: 1px solid #bbb;
+  margin-top: 20px;
+}
+
+
+.flex-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-cards .item h3{
+  text-align: center;
+  font-weight: 900;
+}
+.flip-card .bg {
+  width: 250px;
+  height: 350px;
+  background-size: contain;
+}
+
+.flip-card .flip-card-front .bg {
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczNkVnley430XQme5oRf5-jyfQZDQ09C8X_MdQbDYBq24d2tNNkxkCoVwM6RyfrTR_k5GCCqv_9TEQuTtf78EkAhs7zNOTt1w5paqmKvKp_t0-y6GOrT0055m1FYflMFgTVcn7XbNQXM_q3bs5FGebCyWw=w744-h1038-s-no-gm?authuser=0);
+}
+
+.flip-card.scarab .flip-card-back .bg {
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczOsn6a-kCYxlqSsKTJpzmnhaTdKBARRiIwgmk3HKxUxumHQTqmtrT_KDacaashFxMJlGEEi3sxY7SC87jrU9vSG0FgT4f1eu0tPCYpPciuNHQcGJyiATZcSz23JY7GgSA-ZvevSCC2Wqa_YRegyeN4Olg=w746-h1040-s-no-gm?authuser=0);
+}
+
+.flip-card.kitsune .flip-card-back .bg {
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPCCNoWFJecJ29zLrVwg8OblRJ39E0C0LjLqHATllnbdeNuOetxVR4HOcE8v84Qoq0HsIvyfQRSL2sX21krfzBkkaZhIEYUeCNtd-H5cKfEdEY__yNC56sHt1Vr7ZLrCkAn8EaCw_jqds-dBjtR5hOeyQ=w746-h1040-s-no-gm?authuser=0);
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 350px;
+  border: 1px solid #f1f1f100;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbbbbb00;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(30, 143, 255, 0);
+  color: white;
+  transform: rotateY(180deg);
 }
