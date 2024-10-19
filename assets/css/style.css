@@ -180,7 +180,7 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 10vh;
+    height: auto;
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
@@ -261,7 +261,7 @@ footer {
     text-align: center;
   }
   #intro {
-    height: 10vh;
+    height: auto;
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
