@@ -46,6 +46,7 @@ https://github.com/fireship-io/222-responsive-icon-nav-css/blob/master/public/st
   }
   
   #nav-list,
+  #intro,
   #social-list,
   #support-list,
   #support-list-m,
@@ -185,12 +186,31 @@ https://github.com/fireship-io/222-responsive-icon-nav-css/blob/master/public/st
         width: 3rem;
       }
     }
+
+
+    #intro {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      height: 10vh;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 10px;
+      display: flex;
+    } 
+
   
     #social-list {
+      display: flex;
+      justify-content: center;
       flex-direction: column;
+
+      div {
+        width: 33.33%;
+        text-align: center;
+      }
     }
-  
-    #social-list,
+
     #shop-list {
       align-items: flex-start;
     }
@@ -203,6 +223,25 @@ https://github.com/fireship-io/222-responsive-icon-nav-css/blob/master/public/st
     main {
       margin: 0 0 5rem 0;
     }
+
+
+  .button {
+    background-color: #f7a6e0;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    &:hover {
+      background-color: #d380b2;
+    }
+  }
+  
+
   }
   
   /* Large screens */
@@ -245,15 +284,54 @@ https://github.com/fireship-io/222-responsive-icon-nav-css/blob/master/public/st
     #support-list {
       margin-top: 2rem;
     }
+
+    #intro {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
   
-    #social-list,
+    #intro {
+      height: 10vh;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 10px;
+      display: flex;
+    } 
+  
+    #social-list {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      div {
+       width: 33.33%;
+       text-align: center;
+   
+     }
+    }
+  
     #shop-list {
       flex-direction: row;
       justify-content: space-around;
+      img {
+        height: 5rem;
+        width: 5rem;
+      }
     }
-  
-    #shop-list img {
-      height: 5rem;
-      width: 5rem;
+
+    .button {
+      background-color: #f7a6e0;
+      border: none;
+      color: black;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 16px;
+      &:hover {
+        background-color: #d380b2;
+      }
     }
   }

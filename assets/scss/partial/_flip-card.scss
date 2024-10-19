@@ -1,0 +1,73 @@
+
+hr.solid {
+    border-top: 1px solid #bbb;
+    margin-top: 20px;
+  }
+  
+  
+.flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    .item h3{
+        text-align: center;
+        font-weight: 900;
+    }
+}
+.flip-card{
+      .bg {
+        width: 250px;
+        height: 350px;
+        background-size: contain;
+      }
+      & &-front .bg {
+        background-image: url(https://lh3.googleusercontent.com/pw/AP1GczNkVnley430XQme5oRf5-jyfQZDQ09C8X_MdQbDYBq24d2tNNkxkCoVwM6RyfrTR_k5GCCqv_9TEQuTtf78EkAhs7zNOTt1w5paqmKvKp_t0-y6GOrT0055m1FYflMFgTVcn7XbNQXM_q3bs5FGebCyWw=w744-h1038-s-no-gm?authuser=0);
+      }
+      &.scarab &-back .bg {
+        background-image: url(https://lh3.googleusercontent.com/pw/AP1GczOsn6a-kCYxlqSsKTJpzmnhaTdKBARRiIwgmk3HKxUxumHQTqmtrT_KDacaashFxMJlGEEi3sxY7SC87jrU9vSG0FgT4f1eu0tPCYpPciuNHQcGJyiATZcSz23JY7GgSA-ZvevSCC2Wqa_YRegyeN4Olg=w746-h1040-s-no-gm?authuser=0);
+      }
+      
+      &.kitsune &-back .bg {
+        background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPCCNoWFJecJ29zLrVwg8OblRJ39E0C0LjLqHATllnbdeNuOetxVR4HOcE8v84Qoq0HsIvyfQRSL2sX21krfzBkkaZhIEYUeCNtd-H5cKfEdEY__yNC56sHt1Vr7ZLrCkAn8EaCw_jqds-dBjtR5hOeyQ=w746-h1040-s-no-gm?authuser=0);
+      }
+} 
+  
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 350px;
+    border: 1px solid #f1f1f100;
+    perspective: 1000px;
+
+    &-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    &:hover &-inner {
+      transform: rotateY(180deg);
+    }
+    
+    &-front, &-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+    }
+    &-front {
+      background-color: #bbbbbb00;
+      color: black;
+    }
+    &-back {
+      background-color: #1e8fff00;
+      color: white;
+      transform: rotateY(180deg);
+    }
+}

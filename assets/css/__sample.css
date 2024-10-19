@@ -180,12 +180,15 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+
+  #intro {
     height: 10vh;
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
     display: flex;
-  }
+  } 
   #social-list {
     display: flex;
     justify-content: center;
@@ -266,7 +269,7 @@ footer {
     justify-content: center;
     padding: 30px 10px;
     display: flex;
-  }
+  } 
   #social-list {
     display: flex;
     justify-content: center;
@@ -365,7 +368,7 @@ https://github.com/fireship-io/224-animated-css-grid/blob/master/public/photo-gr
   justify-content: center;
   padding: 30px 10px;
   display: flex;
-}
+} 
 
 * #body-carousel {
   height: 50vh;
@@ -637,7 +640,6 @@ hr.solid {
   text-align: center;
   font-weight: 900;
 }
-
 .flip-card .bg {
   width: 250px;
   height: 350px;
@@ -653,13 +655,17 @@ hr.solid {
   background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPCCNoWFJecJ29zLrVwg8OblRJ39E0C0LjLqHATllnbdeNuOetxVR4HOcE8v84Qoq0HsIvyfQRSL2sX21krfzBkkaZhIEYUeCNtd-H5cKfEdEY__yNC56sHt1Vr7ZLrCkAn8EaCw_jqds-dBjtR5hOeyQ=w746-h1040-s-no-gm?authuser=0);
 }
 
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 250px;
   height: 350px;
-  border: 1px solid rgba(241, 241, 241, 0);
-  perspective: 1000px;
+  border: 1px solid #f1f1f100;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
+/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -668,97 +674,30 @@ hr.solid {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+
+/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
+
+/* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: rgba(187, 187, 187, 0);
+  background-color: #bbbbbb00;
   color: black;
 }
+
+/* Style the back side */
 .flip-card-back {
   background-color: rgba(30, 143, 255, 0);
   color: white;
   transform: rotateY(180deg);
-}
-
-#evoCalendar .calendar-table tbody tr:first-child th {
-  padding-top: 20px;
-  padding-bottom: 15px;
-  background: #b6acf2;
-  border-radius: 30px;
-}
-#evoCalendar .calendar-header td {
-  padding-top: 9px;
-  background: #c8c1f6;
-  border-radius: 20px;
-}
-#evoCalendar .event-bullet-event, #evoCalendar .type-event,
-#evoCalendar .event-bullet-launch, #evoCalendar .type-launch,
-#evoCalendar .event-bullet-holiday, #evoCalendar .type-holiday {
-  background-color: transparent;
-  position: relative;
-}
-#evoCalendar .event-bullet-event::after, #evoCalendar .type-event::after,
-#evoCalendar .event-bullet-launch::after, #evoCalendar .type-launch::after,
-#evoCalendar .event-bullet-holiday::after, #evoCalendar .type-holiday::after {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-#evoCalendar .event-bullet-event::after, #evoCalendar .type-event::after {
-  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPGWtQieIsmCoDe8OisUzfT0_nYXF40Q8HJTikVOxL_z9r-le_0A91BaS4-cP5X8klUtT6I1ZBboT4_ktpplLcpfgxXV-Hd1NYK3Ymcv2hMloLup6ZoelNun7fvjEmyhs_rHatEDapjUwl0cAAJFgLvCA=w451-h453-s-no-gm?authuser=0);
-}
-#evoCalendar .event-bullet-event::after {
-  width: 50px;
-  height: 50px;
-  top: -20px;
-  left: -10px;
-}
-#evoCalendar .type-event::after {
-  width: 30px;
-  height: 30px;
-  top: -30px;
-  left: -33px;
-  transform: rotate(-14deg);
-}
-#evoCalendar .event-bullet-holiday::after, #evoCalendar .type-holiday::after {
-  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczODNDHmXLqhINbRTgnuYPpgVEBYGJHXzKAwFV8iPM8o12Se1l8y7KDkMmYlDsKCQi09rv_3oYWNuvFXWsCEpU2Kwjj4y7TKt4z1TbLBauIgUL8kISM9ZhH4L13G0_i-2d7Myk3D8zrf9XhEx4JMd4ihZw=w451-h453-s-no-gm?authuser=0);
-}
-#evoCalendar .event-bullet-holiday::after {
-  width: 50px;
-  height: 50px;
-  top: -20px;
-  left: -10px;
-}
-#evoCalendar .type-holiday::after {
-  width: 30px;
-  height: 30px;
-  top: -30px;
-  left: -33px;
-  transform: rotate(-14deg);
-}
-#evoCalendar .event-bullet-launch::after, #evoCalendar .type-launch::after {
-  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczN84MuFqtOE0uzafNc9yWeqP_LP-dia6wATonmQpjaaDiiXf-pkqGJT3bgx5A0yy9WcNJNc9nB4z5GPmn9mqFvxTJx9vMUntDOFmSV3ZN9tojNPHYsnyZ1diRj7Zcy78ehb0q5iPrbV5uzXnpxKxir5Jw=w451-h453-s-no-gm?authuser=0);
-}
-#evoCalendar .event-bullet-launch::after {
-  width: 50px;
-  height: 50px;
-  top: -20px;
-  left: -10px;
-}
-#evoCalendar .type-launch::after {
-  width: 30px;
-  height: 30px;
-  top: -30px;
-  left: -33px;
-  transform: rotate(-14deg);
 }

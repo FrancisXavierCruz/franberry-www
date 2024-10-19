@@ -23,8 +23,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/gh/felixhagspiel/jsOnlyLightbox/css/lightbox.min.css">
+
+  <link rel="stylesheet" href="./assets/css/evo-calendar.css">
+  <link rel="stylesheet" href="./assets/css/evo-calendar.midnight-blue.min.css">
+  <link rel="stylesheet" href="./assets/css/evo-calendar.royal-navy.min.css">
+  <link rel="stylesheet" href="./assets/css/evo-calendar.orange-coral.min.css">
   <link rel="stylesheet" href="./assets/css/min/style.css">
   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./assets/js/evo-calendar.min.js"></script>
+
   <script src="https://kit.fontawesome.com/cee44eb018.js" crossorigin="anonymous"></script>
 </head>
 
@@ -195,179 +203,14 @@
       </div>
     </div>
 
-    <h2 id="originals">For Sale Originals</h2>
-    <div class="photo-grid">
-    <h3>COMING SOON.</h3>
-    </div>
+    <h2 id="originals">Event Calendar</h2>
+    <div id="evoCalendar"></div>
+
+
 
     <hr class="solid">
 
-    <h2 id="Paintings">Paintings</h2>
-    <h3 id="Paintings">2024 (For Sale)</h3>
-    <div class="photo-grid">
-      <div
-        data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczMYzCLvIdi1ZNg-okD-xwSCjbRI7etw-2jGFndK_9XVrnyOrnCWt1zFoq9Q06WvARj4B7ttd4Ylq7bsaFst6wHZW6ki5IfxEuM0yiksW0hbxEByKLTFZ_t1Oq7FVFs-d4L0bDRu6GJWZaHhHsNUNV_56g=w966-h1490-s-no-gm?authuser=0"
-        data-jslghtbx-group="Paintings" data-jslghtbx-caption="Marching Meatballs" class="window card card-tall"
-        style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczMYzCLvIdi1ZNg-okD-xwSCjbRI7etw-2jGFndK_9XVrnyOrnCWt1zFoq9Q06WvARj4B7ttd4Ylq7bsaFst6wHZW6ki5IfxEuM0yiksW0hbxEByKLTFZ_t1Oq7FVFs-d4L0bDRu6GJWZaHhHsNUNV_56g=w966-h1490-s-no-gm?authuser=0')">
-          <div class="top">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-      <div
-      data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczMcS1rdUXm-cUS2Rtxz6ZDnq1NZmPpu2zVgtXVBPdVPGn6BQtURSIQWYBvOdw0jD3P58Bt9BMJ7aXnhK2PhxP_zGpyaCaIsCjcvZ328rQXoqSLtVkAQELrCgE0-5gqR1zA4AuL6gfHYA2dKUZa1wV64aQ=w968-h1490-s-no-gm?authuser=0"
-      data-jslghtbx-group="Paintings" data-jslghtbx-caption="Siomai in the Sky" class="window card card-tall"
-      style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczMcS1rdUXm-cUS2Rtxz6ZDnq1NZmPpu2zVgtXVBPdVPGn6BQtURSIQWYBvOdw0jD3P58Bt9BMJ7aXnhK2PhxP_zGpyaCaIsCjcvZ328rQXoqSLtVkAQELrCgE0-5gqR1zA4AuL6gfHYA2dKUZa1wV64aQ=w968-h1490-s-no-gm?authuser=0')">
-        <div class="top">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </div>
-      </div>
-    </div>
-
-    <hr class="solid">
-
-    <h3 id="Paintings">2023</h3>
-    <h3 id="Paintings">In Search of the Great Deer (For Sale)</h3>
-    <div class="photo-grid">
-      <div
-        data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczNMGKlNDSZExkB7FEREV4wIlMDEYsAumRzf0--KvplNofUJGd8YelfJM2dfv1Us4mRShxwH2_LApO9OvK7qsBTMlC18-NdG4_JPc_UCGmmhvAPHuLwOhzpCUS820zy0wdfcqHZHI_kzX0y2Qi3_uxH7rQ=w1080-h809-s-no-gm?authuser=0"
-        data-jslghtbx-group="Paintings" data-jslghtbx-caption="In Search of the Great Deer (natural lighting)" class="window card card-tall card-wide"
-        style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczNMGKlNDSZExkB7FEREV4wIlMDEYsAumRzf0--KvplNofUJGd8YelfJM2dfv1Us4mRShxwH2_LApO9OvK7qsBTMlC18-NdG4_JPc_UCGmmhvAPHuLwOhzpCUS820zy0wdfcqHZHI_kzX0y2Qi3_uxH7rQ=w1080-h809-s-no-gm?authuser=0')">
-          <div class="top">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-      <div
-        data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczMHk5k4YHTY44S7dpibo0LteUUm7wi_zKcMCoZdNbaQ4HVNf9TRjmxIILmXCHJi8KQsG7JDPect2VxrFsfpKLM6LmrLuDieOuto7XC_B9zOlLlfza5Pmb8B4RAQpaKjQBNW1nfQWYpPADc4mRraYKASww=w1080-h809-s-no-gm?authuser=0"
-        data-jslghtbx-group="Paintings" data-jslghtbx-caption="In Search of the Great Deer (black light)" class="window card card-tall card-wide"
-        style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczMHk5k4YHTY44S7dpibo0LteUUm7wi_zKcMCoZdNbaQ4HVNf9TRjmxIILmXCHJi8KQsG7JDPect2VxrFsfpKLM6LmrLuDieOuto7XC_B9zOlLlfza5Pmb8B4RAQpaKjQBNW1nfQWYpPADc4mRraYKASww=w1080-h809-s-no-gm?authuser=0')">
-          <div class="top">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-      <div
-      data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczPfbdqb3K6wkgXnEIz2PvZARjFg_J8jydqQ7cMve7ApXZjff-1HVBU2JBmctH70XpTCYwjl-TYtJzQq8cSBbPsAzVm36OVOwCnvd1zyfALQRxjK9KzNv88zhsruEm4PP4qGvkve9_dieJQSh4HEiioV-A=w1080-h763-s-no-gm?authuser=0"
-      data-jslghtbx-group="Paintings" data-jslghtbx-caption="In Search of the Great Deer (glow in the dark)" class="window card card-tall card-wide"
-      style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczPfbdqb3K6wkgXnEIz2PvZARjFg_J8jydqQ7cMve7ApXZjff-1HVBU2JBmctH70XpTCYwjl-TYtJzQq8cSBbPsAzVm36OVOwCnvd1zyfALQRxjK9KzNv88zhsruEm4PP4qGvkve9_dieJQSh4HEiioV-A=w1080-h763-s-no-gm?authuser=0')">
-        <div class="top">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </div>
-      </div>
-    </div>
-
-    <hr class="solid">
-
-    <h3 id="Paintings">Bakunawa (For Sale)</h3>
-    <div class="photo-grid">
-      <div
-      data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczOCcIl3M3VnjSvUK_biP4gDerQjMqzTvwzA3ig9xkWzVubddF-urB9jjOuWa_c1UjaoFM4Gx3EbonTQ-TIpoMpm8RPzk-Ut5edh3oCl7bQcZkAlsHcfvDf_lfBfBq8NgnPzfygtTYn9yN9SwK2OegC64g=w896-h1275-s-no-gm?authuser=0"
-      data-jslghtbx-group="Paintings" data-jslghtbx-caption="Bakunawa (Natural Lighting)" class="window card card-tall"
-      style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczOCcIl3M3VnjSvUK_biP4gDerQjMqzTvwzA3ig9xkWzVubddF-urB9jjOuWa_c1UjaoFM4Gx3EbonTQ-TIpoMpm8RPzk-Ut5edh3oCl7bQcZkAlsHcfvDf_lfBfBq8NgnPzfygtTYn9yN9SwK2OegC64g=w896-h1275-s-no-gm?authuser=0')">
-        <div class="top">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </div>
-      <div
-        data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczNNsf8iTX-xe-IDAHODoz14vrXXZ2cA_2VLewUoZWo8ZtPYAyJxniESmKANJ86p45bf9Olscugd2hXQlUzMnf56BxYWBscYHJxdUhUMHazBxpepK0NamL62jdjjXwaJq7aKJxQ2AFKeG_G3jOrGITNhkQ=w905-h1286-s-no-gm?authuser=0"
-        data-jslghtbx-group="Paintings" data-jslghtbx-caption="Bakunawa (Black Light)" class="window card card-tall"
-        style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczNNsf8iTX-xe-IDAHODoz14vrXXZ2cA_2VLewUoZWo8ZtPYAyJxniESmKANJ86p45bf9Olscugd2hXQlUzMnf56BxYWBscYHJxdUhUMHazBxpepK0NamL62jdjjXwaJq7aKJxQ2AFKeG_G3jOrGITNhkQ=w905-h1286-s-no-gm?authuser=0')">
-          <div class="top">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-      <div
-        data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczNgZP1mh0GHjqjs_FuTPzVXN3LvgDAbiFg2s7nhHgeIjGweWu2KEK5II2uWv_Ct9YLghwgnNq8bvFXakwlut9IVAGmU3eKB_MP8YungijRJcWkc60-WliqFGwnCqDw9gRu8FrK8vNWtA0RssbjRQQlZXQ=w1080-h1350-s-no-gm?authuser=0"
-        data-jslghtbx-group="Paintings" data-jslghtbx-caption="Bakunawa (Glow in the Dark)" class="window card card-tall"
-        style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczNgZP1mh0GHjqjs_FuTPzVXN3LvgDAbiFg2s7nhHgeIjGweWu2KEK5II2uWv_Ct9YLghwgnNq8bvFXakwlut9IVAGmU3eKB_MP8YungijRJcWkc60-WliqFGwnCqDw9gRu8FrK8vNWtA0RssbjRQQlZXQ=w1080-h1350-s-no-gm?authuser=0')">
-          <div class="top">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <hr class="solid">
-
-    <h3 id="Paintings">Minokawa (For Sale)</h3>
-    <div class="photo-grid">
-      <div
-      data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczO0mhFJHTAC9M1nczrCmmO53eIG1T6qI71f8OFRLb4rf5NdCLFIfxBLtvp24nPJx8g7zXvPOv0njij2qjJzq8DU09zX1FJueIckD4gfMQzD_KgRhtzyEsLug4sCzuGubZFTljQWiVwQeE92IJMkDDuqEw=w857-h1199-s-no-gm?authuser=0"
-      data-jslghtbx-group="Paintings" data-jslghtbx-caption="Minokawa (Natural Lighting)" class="window card card-tall"
-      style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczO0mhFJHTAC9M1nczrCmmO53eIG1T6qI71f8OFRLb4rf5NdCLFIfxBLtvp24nPJx8g7zXvPOv0njij2qjJzq8DU09zX1FJueIckD4gfMQzD_KgRhtzyEsLug4sCzuGubZFTljQWiVwQeE92IJMkDDuqEw=w857-h1199-s-no-gm?authuser=0')">
-        <div class="top">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </div>
-      <div
-        data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczNsG8RgWuqN7a5BvSD-RBBs39pi9CM9dV0Ed1BYFwfexLeK2ymtLvZxXNF9a5IPGKzt97QJ0wSclMtyPUrHVxJGbv0duzPUXX35kVdCFwHBNMYzvMHfN8mRHrMAv561GCM8k54EDMNozJxjIlUNqtqfFA=w903-h1259-s-no-gm?authuser=0"
-        data-jslghtbx-group="Paintings" data-jslghtbx-caption="Minokawa (Black Light)" class="window card card-tall"
-        style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczNsG8RgWuqN7a5BvSD-RBBs39pi9CM9dV0Ed1BYFwfexLeK2ymtLvZxXNF9a5IPGKzt97QJ0wSclMtyPUrHVxJGbv0duzPUXX35kVdCFwHBNMYzvMHfN8mRHrMAv561GCM8k54EDMNozJxjIlUNqtqfFA=w903-h1259-s-no-gm?authuser=0')">
-          <div class="top">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-      <div
-        data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczPPHe2bX_Yj_-VPUlOT8xL5fLNoHci3IYyTw76Ip9H97sfAXtqCKGBgI6tKPOowB7lsoZOVrgqtucGoum8Qu5xFF0Y4I-kp9gIgm0W43iIPDtKFGr8nm30jVLx2A9FYsGi2xPZsSojRUAMqRO3sFxVydg=w1080-h1350-s-no-gm?authuser=0"
-        data-jslghtbx-group="Paintings" data-jslghtbx-caption="Minokawa (Glow in the Dark)" class="window card card-tall"
-        style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczPPHe2bX_Yj_-VPUlOT8xL5fLNoHci3IYyTw76Ip9H97sfAXtqCKGBgI6tKPOowB7lsoZOVrgqtucGoum8Qu5xFF0Y4I-kp9gIgm0W43iIPDtKFGr8nm30jVLx2A9FYsGi2xPZsSojRUAMqRO3sFxVydg=w1080-h1350-s-no-gm?authuser=0')">
-          <div class="top">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <hr class="solid">
-
-    <h3 id="Paintings">2022</h3>
-    <h3 id="Paintings">Magical Bonsai (Sold)</h3>
-    <div class="photo-grid">
-    <div
-    data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczMVE5uG7JVfHmigSHHFSxrEqE6A-s0HsVAQrFZvTlbD8_dv566o1PPWvNaNiqHaXID6Da_jES4lRb3VJTTBc4QCfXikxzx3A4fESCGe74nMEL86DImqSbFZ9vdR0x1FzozDl65A--DlO_ziZUb85IWk9Q=w978-h1490-s-no-gm?authuser=0"
-    data-jslghtbx-group="Paintings" data-jslghtbx-caption="Magical Bonsai (Natural Lighting)" class="window card card-tall card-wide"
-    style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczMVE5uG7JVfHmigSHHFSxrEqE6A-s0HsVAQrFZvTlbD8_dv566o1PPWvNaNiqHaXID6Da_jES4lRb3VJTTBc4QCfXikxzx3A4fESCGe74nMEL86DImqSbFZ9vdR0x1FzozDl65A--DlO_ziZUb85IWk9Q=w978-h1490-s-no-gm?authuser=0')">
-      <div class="top">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </div>
-    <div
-      data-jslghtbx="https://lh3.googleusercontent.com/pw/AP1GczMPX2uvcy0dezTporGY6OfmuAotxZF57Q0kQe6z8z51p_iInFniDQmtk_qNHdgmdPUi1941IBjZaWy2IIxR-b9oWs0CEvZ2OVJ8hqJqvWFuDT3NNCIfoSPDsBWSpWzm7ykDlxRxYTdgUguWmLU-zgcJOg=w984-h1490-s-no-gm?authuser=0"
-      data-jslghtbx-group="Paintings" data-jslghtbx-caption="Magical Bonsai (Black Light)" class="window card card-tall card-wide"
-      style="background-image:url('https://lh3.googleusercontent.com/pw/AP1GczMPX2uvcy0dezTporGY6OfmuAotxZF57Q0kQe6z8z51p_iInFniDQmtk_qNHdgmdPUi1941IBjZaWy2IIxR-b9oWs0CEvZ2OVJ8hqJqvWFuDT3NNCIfoSPDsBWSpWzm7ykDlxRxYTdgUguWmLU-zgcJOg=w984-h1490-s-no-gm?authuser=0')">
-        <div class="top">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </div>
-
-    <hr class="solid">
-    </div>
+    
 
 
     <h2 id="shop">Shop</h2>
@@ -425,8 +268,65 @@
         }
       });
     }
+
+
+    var myEvents = [
+    { 
+      id: "required-id-1",
+      name: "Komikeria", 
+      //badge: "10/18 - 10/20",
+      date: ["October/18/2024", "October/20/2024"],
+      description: "3rd Floor Robinson's Galleria <br> 10:00am to 8:00pm",
+      type: "event", 
+    },
+    { 
+      id: "required-id-2",
+      name: "Komikon Grande", 
+      // badge: "10/19 - 10/20",
+      date: ["November/23/2024", "November/24/2024"],
+      description: "Bayanihan Center <>",
+      type: "event", 
+    },
+    { 
+      id: "required-id-3",
+      name: "SGCC", 
+      // badge: "10/19 - 10/20",
+      date: ["December/7/2024", "December/8/2024"],
+      description: "Singapore ComicCon <br> Marina Bay Sands",
+      type: "event", 
+    },
+    { 
+      id: "required-id-4",
+      name: "Colores dela Vida", 
+      // badge: "10/19 - 10/20",
+      date: ["December/8/2024", "December/15/2024"],
+      description: "Paraiso de Avedad <br> San Pablo City",
+      type: "launch", 
+    },
+    { 
+      id: "required-id-5",
+      name: "CosMatsu", 
+      // badge: "10/19 - 10/20",
+      date: ["December/28/2024", "December/30/2024"],
+      description: "SMX Convention Center",
+      type: "event", 
+    },
+    { 
+      id: "required-id-0",
+      name: "PASKO!!!", 
+      // badge: "12/25",
+      date: ["December/25/2024"],
+      description: "Merry Christmas!!!",
+      type: "holiday", 
+    },
+
+    // more events here
+  ]
+
+  $('#evoCalendar').evoCalendar({
+    calendarEvents: myEvents,
+  });
   </script>
-  <script src="./assets/js/carousel.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -8,24 +8,10 @@
     }
 
     #body-carousel{
-        #updates-1 {
-            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8AEJ38wRKs8KvoT6lr9HKj_Xdlxdwfk8NJkT5GDNtkCPIAvUyAST42KgFlVa93oxRxU2mzQQDFRWx7yv9dMTei5JKeVWKshb9UkaXQSKYez4znggMMOwRkhZ0Z0MBt9Aov_qSMOwDY28WiVPdqjqaPj=s604-no?authuser=0");
-        }
-
-        #updates-2 {
-            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8CcTqcQdk-xKkaByd2_8cuFBwFCicfpCp_aCOSVAHKKstcHIINi-Rl1H_3FT75UrjWCr_oH-HpV5Lr9qWYpTfmNCaW42uuvq244-OJORgfsB1huY_rSlzFSwEgyhJGNKSrpy0WaoQ46yq6ikmYduZ22=s604-no?authuser=0");
-        }
-
-        #updates-3 {
-            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8DoulufCT-1hRwF1re6pcijYiSy6vaBk-mmvhNnJ7pZ5akN2EdRtItUk3HYImJiSFkdV2HM5m4oAGtfcG42F1bEh_rBCtHhAU9kYbnQ7hlpifd5BVROYOw4SNnqxxN1lXl2_C6AlzmQWh3bEQ5KDyzI=s604-no?authuser=0");
-        }
-
-        #updates-4 {
-            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8DdfPZ-FeUZ-lIFsaeFqiYyS-ZXN8Bs8DerUb8BRmaXIZGGEDCHV6YU6EWsyGZhNq3uYhwtnCMmJHOyXjSAqqWUoYTg32KQOiUANtRzM6wODdw9SAj3PUtJhBwZja-PqgPXUn72KxuQGd3nxYQec2Lt=s604-no?authuser=0");
-        }
-
-        #updates-5 {
-            background-image: url("https://lh3.googleusercontent.com/pw/AMWts8CTwhzYA-Hdq9VPwQv2SWImRJ90i6g5LotOtbSsnPf_KU5czQ-Ur6zdsbpVe02nYrBajRx272U5znDgmOLoiI1QEY4L3SXowXXhaPIa2x6GlrfhrafqocEz4ZSsN4zJer6gbFK3GjLS8YDrm_-n1ppJ=s604-no?authuser=0");
+        @each $name, $bg-img in $bg-imgs {
+            ##{ $name } {
+              background-image: url("#{$bg-img}");
+            }
         }
     }
 
@@ -62,5 +48,43 @@
             background-position: top;
 
         }
+    }
+
+    .button {
+      background-color: #f7a6e0;
+      border: none;
+      color: black;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 16px;
+      &:hover {
+        background-color: #d380b2;
+      }
+    }
+    
+  
+    #social-list {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      div {
+        width: 33.33%;
+        text-align: center;
+    
+      }
+    }
+  
+    #support-new {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      div {
+        text-align: center;
+      }
     }
 }
