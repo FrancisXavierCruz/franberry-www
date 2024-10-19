@@ -360,7 +360,7 @@ https://github.com/fireship-io/224-animated-css-grid/blob/master/public/photo-gr
 }
 
 #intro {
-  height: 10vh;
+  height: auto;
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
